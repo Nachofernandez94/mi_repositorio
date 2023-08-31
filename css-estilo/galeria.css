@@ -1,7 +1,22 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+
   }
+  .barra{
+    display: flex;
+    justify-content: space-around;
+    background-color:blanchedalmond
+    }
+   
+   .barra a {
+     color: black;
+     font-size: 20px;
+     padding: 18px 26px;
+     text-decoration: none;
+     
+   }
+   
   
   .gallery {
     display: grid;

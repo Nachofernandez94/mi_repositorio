@@ -1,18 +1,4 @@
-.barra{
- display: flex;
- justify-content: space-around;
- background-color:blanchedalmond
- }
 
-.barra a {
-  color: black;
-  font-size: 20px;
-  padding: 18px 26px;
-  text-decoration: none;
-  
-}
-
-  
 
 @media screen and (max-width: 600px) {
     .barra a {
