@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.barra {
+  height: 150px;
+  background-color: coral;
+  display: flex;
+  justify-content: space-between;
+}
+
+.barra img {
+  width: 150px;
+  height: 150px;
+}
+
+.barra a {
+  color: black;
+  font-size: 20px;
+  padding: 18px 26px;
+  text-decoration: none;
+}
+
+.barra ul {
+  list-style-type: none;
+  display: flex;
+  padding: 60px;
+}
+
+.barra ul :hover {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 600px) {
+  .barra a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.imagenes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circular-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: moccasin;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.columna {
+  flex: 1;
+  margin: 20px;
+  text-align: center;
+}
+
+.columna h3 {
+  font-size: 20px;
+}
+
+.columna p {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image img {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.menu {
+  background-color: bisque;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px 0, 0, 0, 0.1;
+  padding: 40px;
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+.imagen-fondo {
+  padding-left: 250px;
+  padding-top: 10px;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.contenedor {
+  width: 1500px;
+  height: 250px;
+  padding-left: 200px;
+  padding-bottom: 220px;
+  text-align: center;
+}
+
+.contenedor p {
+  font-size: 20px;
+  width: -moz-max-content;
+  width: max-content;
+  color: black;
+  font-family: inherit;
+}
+
+.contenedor h3 {
+  padding-right: 1200px;
+  color: brown;
+  font-size: 25px;
+  font-family: serif;
+}
+
+.nosotros {
+  text-align: center;
+}
+
+.nosotros h1 {
+  font-size: 50px;
+  color: coral;
+}
+
+.fondo-apicultura {
+  width: 1000px;
+  height: 600px;
+  padding-top: 30px;
+  padding-left: 40px;
+  border-radius: 50px;
+}
+
+.proceso-apicultura {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 22px;
+}
+
+.titulo-apicultura {
+  font-size: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+  color: brown;
+  font-family: Arial, Helvetica, sans-serif;
+}/*# sourceMappingURL=styles.css.map */
