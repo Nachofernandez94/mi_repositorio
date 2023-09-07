@@ -9,27 +9,23 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
 .barra img {
   width: 150px;
   height: 150px;
 }
-
 .barra a {
   color: black;
   font-size: 20px;
   padding: 18px 26px;
   text-decoration: none;
 }
-
+.barra a:hover {
+  transform: scale(1.5);
+}
 .barra ul {
   list-style-type: none;
   display: flex;
   padding: 60px;
-}
-
-.barra ul :hover {
-  transform: scale(1.5);
 }
 
 @media screen and (max-width: 600px) {
@@ -44,8 +40,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
-.circular-image {
+.imagenes .circular-image {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -58,49 +53,44 @@ footer {
   display: flex;
   justify-content: space-around;
 }
-
-.columna {
+footer .columna {
   flex: 1;
   margin: 20px;
   text-align: center;
 }
-
-.columna h3 {
+footer .columna h3 {
   font-size: 20px;
 }
-
-.columna p {
+footer .columna p {
   font-size: 16px;
 }
-
 @media (max-width: 768px) {
-  .footer-content {
+  footer .footer-content {
     flex-direction: column;
     align-items: flex-start;
   }
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding: 20px;
 }
-
-.image {
+.gallery .image {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
 }
-
-.image img {
+.gallery .image img {
   width: 50%;
 }
-
 @media screen and (max-width: 768px) {
-  .gallery {
+  .gallery .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 .menu {
   background-color: bisque;
   border-radius: 10px;
@@ -124,7 +114,6 @@ footer {
   padding-bottom: 220px;
   text-align: center;
 }
-
 .contenedor p {
   font-size: 20px;
   width: -moz-max-content;
@@ -132,7 +121,6 @@ footer {
   color: black;
   font-family: inherit;
 }
-
 .contenedor h3 {
   padding-right: 1200px;
   color: brown;
@@ -143,7 +131,6 @@ footer {
 .nosotros {
   text-align: center;
 }
-
 .nosotros h1 {
   font-size: 50px;
   color: coral;
