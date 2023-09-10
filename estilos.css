@@ -25,9 +25,7 @@ body {
   display: flex;
   padding: 60px;
 }
-.barra ul :hover{
-   transform-style: preserve-3d;
-}
+
 
 @media screen and (max-width: 600px) {
     .barra a {
