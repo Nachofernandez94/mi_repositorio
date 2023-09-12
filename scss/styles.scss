@@ -191,13 +191,22 @@ footer {
   width: 100%; 
   max-width: 400px; 
   margin-left: 20px; 
-  
+  }
+.section-apicultura{
+  background: linear-gradient(to top, beige, 80%,white);
 }
 .titulo-apicultura{
   font-size: 45px;
   text-align: center;
-  color: tomato;  
+  color:burlywood;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
  
+}
+.apicultura{
+  display: flex;
+  justify-content: space-between;
+  background-color:bisque;
+
 }
 .fondo-apicultura {
   width: 1000px;
@@ -209,4 +218,11 @@ footer {
 .proceso-apicultura {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 22px;
+}
+.imagen-proceso{
+  width: 450px;
+  height: 300px; 
+  margin-top: 150px;
+  margin-right: 200px;
+  
 }
