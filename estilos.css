@@ -1,169 +1,194 @@
-body {
-  margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.barra{
-  height: 150px;
-  background-color: coral;
+.barra {
+  height: auto; 
+  background: linear-gradient(yellow, coral);
   display: flex;
-  justify-content:space-between
-  
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
 }
-.barra img{
-  width: 150px;  
-  height: 150px;
+
+.barra img {
+  width: 150px;
+  height: auto; 
+  margin-top: 20px; 
 }
-.barra a{
-  color: black;
-  font-size: 20px;
-  padding: 18px 26px;
-  text-decoration: none;
-  
-}
-.barra ul{
+
+ul {
   list-style-type: none;
   display: flex;
-  padding: 60px;
+  padding: 20px 0; /* Reducimos el relleno */
+  justify-content: center; /* Centramos los elementos horizontalmente */
 }
 
-
-@media screen and (max-width: 600px) {
-    .barra a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+.div-nuevo a {
+  padding:18px 26px;
+  text-decoration: none;
+  font-size: 20px; 
+  color: #000;
+  justify-content:end;
+  font-family: 'Yatra One', cursive;
+  transition: background-color 0.3s, color 0.3s;
 }
-.imagenes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.div-nuevo a:hover {
+  font-size: 20px;
+  color: white; 
+  border: 0,5px solid #000;
+  text-decoration: underline;
+  text-decoration-color: white;
+
+}   
   
-  .circular-image {
-    width: 200px; 
-    height: 200px;
-    border-radius: 50%;
-    margin: 10px 0; 
+
+.search-container {
+  justify-content: center; /* Centramos el contenido */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+.search-box {
+  width: 100%; /* Ancho completo */
+  max-width: 250px; /* Ancho máximo */
+  height: 40px; /* Aumentamos la altura */
+  margin: 10px 0; 
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* Banner */
+.banner {
+  height: auto; /* Altura automática para adaptarse al contenido */
+  text-align: center;
+  background: linear-gradient(coral,yellow);
+
+}
+.imagen-banner{
+  width: 60%;
+}
+
+.banner h1 {
+  font-size: 60px;
+  font-family: 'Marck Script', cursive;
+  border: 2px;color: #000;
+}
+
+.banner h3 {
+  font-family: 'Marck Script', cursive;
+  font-size: 30px;
+  border: 1px;color: #000;
+}
+
+.imagen-banner {
+  max-width: 100%; /* Aseguramos que la imagen no se desborde */
+  height: auto; /* Altura automática */
+}
+.carousel-inner{
+  height: 400px;
+}
+.carousel-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.carouselSlider{
+  width:50%;
+  justify-content: center;
+}
+
+/* Galería */
+.gallery {
+  grid-template-columns: repeat(1, 1fr); /* Una columna para dispositivos móviles */
+}
+
+.image img {
+  width: 100%; 
+}
+.imagen-texto {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  border-left: #000;
+}
+.texto h3{
+  margin-left: 850px;
+  font-size: 30px;
+  text-decoration:underline;
+  color: brown;
+  
+}
+.texto p {
+  margin-left: 600px;
+  font-size: 20px;
+  font-style:oblique;
+  font-weight: bold;
+}
+
+.fondo-nosotros {
+  width: 100%; 
+  max-width: 400px; 
+  margin-left: 20px; 
   }
 
 
-footer{
-    background-color: moccasin;
-    padding:20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.columna {
-    flex: 1;
-    margin: 20px;
+footer {
+  background: linear-gradient(to top, mistyrose, 80%,white);
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;}
+  
+  .columna {
+    flex: 3;
+    margin: 50px;
     text-align: center;
-}
-
-.columna h3 {
-    font-size: 20px;
-}
-
-.columna p {
-    font-size: 16px;
-}
-
-  
-  @media (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-  
-    }
-   
     
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      padding: 20px;
+    h3 {
+      font-size: 25px;
+      color: #000;
+      text-decoration: underline;
     }
     
-    .image {
-      position: relative;
-      overflow: hidden;
-      border-radius: 10px;
-  
-    }
-    
-    .image img {
-      width: 50%
+    p {
+      font-size: 16px;
       
     }
-    
-    @media screen and (max-width: 768px) {
-      .gallery {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-    
+  }
   
-  .menu {
-      background-color: bisque;
-      border-radius: 10px;
-      box-shadow: 0px 2px 6px (0, 0, 0, 0.1);
-      padding: 40px;
-      margin: 50px auto;
-      max-width: 600px;
-  }
-  .imagen-fondo{
-    padding-left: 250px;
-    padding-top: 10px;
-    width:max-content
-  }
 
-.contenedor {
-  width: 1500px;
-  height: 250px; 
-  padding-left: 200px; 
-  padding-bottom: 220px;
+
+/* Sección de Apicultura */
+.section-apicultura {
   text-align: center; 
-
+  background: linear-gradient(to top, beige, 80%,white);
 }
 
-.contenedor p {
-  font-size: 20px; 
-  width: max-content;
-  color: black;
-  font-family:inherit
-  }
-  .contenedor h3{
-    padding-right: 1200px;
-    color: brown;
-    font-size: 25px;
-    font-family:serif
-    
-  }
-  .nosotros{
-  text-align: center; 
-  }
-  .nosotros h1{
-    font-size: 50px;
-    color:coral
-  }
-  .fondo-apicultura{
-   width: 1000px;
-   height: 600px;
-   padding-top: 30px;
-   padding-left: 40px;
-   border-radius: 50px;}
-   
-  .proceso-apicultura{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 22px;
-  }
+.titulo-apicultura {
+  font-size: 30px; 
+  color:burlywood;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
 
-  .titulo-apicultura{
-    font-size: 40px;
-    padding-top: 40px;
-    padding-left: 40px;
-    color: brown;
-    font-family:Arial, Helvetica, sans-serif}
+.apicultura {
+  flex-direction: column; 
+}
+
+.fondo-apicultura {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 50px; 
+}
+
+.proceso-apicultura {
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.imagen-proceso {
+  max-width: 100%; 
+  height: auto; 
+  margin-top: 20px; 
+  margin-right: 0; 
+}
+@media (max-width: 768px) {
+  .barra {
+    padding: 10px; /* Ajusta el relleno para dispositivos móviles */
+  }
+}
